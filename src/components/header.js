@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from "../lib/logo.png"
 import classNames from 'classnames';
 import Homepage from "./Pages/homepage";
+import SjurSide from './Pages/sjurSide'
+
 
 class Header extends Component {
     constructor(props){
@@ -20,16 +22,16 @@ class Header extends Component {
             <nav>
                 <ul>
                     <li>
-                        <button className={"blankButton"} onClick={()=> super.setState({currentPage: Homepage})}>Tidenes side</button>
+                        <button className={"blankButton"} onClick={()=> this.props.changeState(Homepage)}>Tidenes side</button>
                     </li>
                     <li>
-                        <button className={"blankButton"} onClick={()=> console.log("LINK")}>Sjurs side</button>
+                        <button className={"blankButton"} onClick={()=> this.props.changeState(SjurSide)}>Sjurs side</button>
                     </li>
                     <li>
                         <button className={"blankButton"} onClick={()=> console.log("LINK")}>Takk til</button>
                     </li>
                     <li>
-                        <button className={"blankButton"} onClick={()=> console.log("LINK")}>Neste Side</button>
+                        <button className={"blankButton"} onClick={()=> console.log("yeeyye")}>Neste Side</button>
                     </li>
                 </ul>
             </nav>

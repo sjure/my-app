@@ -48,7 +48,7 @@ Header nav {
 
 Header nav ul li {
   list-style-type: none;
-  margin: 10px;
+  padding: 10px;
   display: inline-block;
   a {
     color: white;
@@ -59,14 +59,34 @@ Header nav ul li {
 }
 
 html {
-  min-height: 100%;
+
+}
+
+.bodySjurSide{
+  position:fixed;
   height:100%;
-  background-size: 100%;
-  background-image: url("lib/asdf.png");
+  width:100%;
+  background-image: url("lib/keeg.jpg");
+  background-repeat:repeat-y;
+  background-position-x: center;
+  background-position-y: bottom;
+  z-index:-1;
+  .ssWrap {
+    h3 {
+      color:rebeccapurple;
+      font-size: 100px;
+      text-align:center;
+    }
+  }
 }
 
 .homepage {
+  position:fixed;
   height:100%;
+  width:100%;
+  background-position-x:center;
+  background-position-y:top;
+  background-image: url("lib/asdf.png");
 }
 
 .laserButton {
