@@ -9,12 +9,19 @@ import Homepage from './Pages/homepage'
 import '../App.scss';
 
 class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            currentPage: Homepage,
+
+        }
+    }
 
   render() {
     return (
         <div className={"App"}>
             <Header/>
-            <Homepage/>
+            <this.state.currentPage/>
         </div>
     );
   }
