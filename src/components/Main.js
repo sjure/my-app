@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import asdf from '../lib/asdf.png'
+import asdf from '../lib/backgroundSjurChingChong.png'
 import '../App.scss';
 import Header from './header'
 import Homepage from "./Pages/homepage";

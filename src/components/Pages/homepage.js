@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Laser from "../laser"
+import Laser from "../divPageComp/laser"
 
 class Homepage extends Component {
     constructor(props){

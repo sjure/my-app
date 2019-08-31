@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import logo from "../lib/logo.png"
+import logo from "../lib/logoSjur.png"
 import classNames from 'classnames';
 import Homepage from "./Pages/homepage";
 import SjurSide from './Pages/sjurSide'
-
+import TakkTil from './Pages/takkTil'
+import Partey from './Pages/partey'
 
 class Header extends Component {
     constructor(props){
@@ -28,10 +29,10 @@ class Header extends Component {
                         <button className={"blankButton"} onClick={()=> this.props.changeState(SjurSide)}>Sjurs side</button>
                     </li>
                     <li>
-                        <button className={"blankButton"} onClick={()=> console.log("LINK")}>Takk til</button>
+                        <button className={"blankButton"} onClick={()=> this.props.changeState(TakkTil)}>Takk til</button>
                     </li>
                     <li>
-                        <button className={"blankButton"} onClick={()=> console.log("yeeyye")}>Neste Side</button>
+                        <button className={"blankButton"} onClick={()=> this.props.changeState(Partey)}>Party time</button>
                     </li>
                 </ul>
             </nav>
