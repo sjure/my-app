@@ -63,7 +63,7 @@ html {
 }
 
 .bodySjurSide{
-  position:fixed;
+  position:absolute;
   height:100%;
   width:100%;
   background-image: url("lib/backgroundSwag.jpg");
@@ -81,7 +81,7 @@ html {
 }
 
 .homepage {
-  position:fixed;
+  position:absolute;
   height:100%;
   width:100%;
   background-position-x:center;
@@ -92,7 +92,7 @@ html {
 .laserButton {
   position: absolute;
   left: 50%;
-  top: 400px;
+  top: 45%;
   margin-left: -125px;
   width: 250px;
   height: 100px;
@@ -138,15 +138,15 @@ html {
   position:absolute;
   background-image:linear-gradient(#ffb3cc, #ffaa80);
   width:100%;
-  height:100%;
+  height:auto;
   display:flex;
   flex-wrap:wrap;
 }
 
 .personCard{
   position:relative;
-  width: 28%;
-  height: auto;
+  max-width: 28%;
+  min-width:100px;
   max-height:450px;
   margin:20px;
   text-align:center;
@@ -172,7 +172,7 @@ html {
 }
 
 .bodyPartey {
-  position:fixed;
+  position:absolute;
   height:100%;
   width:100%;
   background-position-x:center;
@@ -202,8 +202,8 @@ html {
   .laser-beam{
     visibility: visible;
     left:-3px;
-    bottom:-192%;
-    height: 400%;
+    bottom:-252%;
+    height: 500%;
     -webkit-animation: laserCorner 7s infinite;
     &.red {
       -webkit-animation: laserCorner 7.2s infinite;
@@ -241,8 +241,8 @@ html {
   .laser-beam{
     visibility: visible;
     left:100%;
-    bottom:-193%;
-    height: 400%;
+    bottom:-253%;
+    height: 500%;
     -webkit-animation: laserCorner2 7.2s infinite;
     background: rgba(99, 195, 231, 0.9);
     &.red {
