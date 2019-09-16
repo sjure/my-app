@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 //components
 import Header from './header'
 import Homepage from './Pages/homepage'
-import TakkTil from './Pages/takkTil'
-import Partey from './Pages/partey'
 //includes
 import '../App.scss';
 

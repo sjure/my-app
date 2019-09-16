@@ -10,10 +10,6 @@ import aleks from '../../lib/aleks.PNG'
 
 
 class TakkTil extends Component {
-    constructor(props){
-        super(props);
-
-    }
 
     render() {
         return (
