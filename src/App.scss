@@ -230,7 +230,6 @@ html {
     }
   }
 }
-
 .rightLaserWrap{
   position:absolute;
   overflow:hidden;
@@ -270,8 +269,6 @@ html {
     }
   }
 }
-
-
 //Lasers
 .laser-beam {
   z-index:1;
@@ -314,7 +311,6 @@ html {
     box-shadow: 0px 0px 15px 0px rgba(86, 212, 69, 1);
   }
 }
-
 @keyframes laser {
   0% {
     transform: rotateZ(-75deg);
@@ -326,7 +322,6 @@ html {
     transform: rotateZ(-75deg);
   }
 }
-
 @keyframes laserCorner {
   0% {
     transform: rotateZ(5deg);
@@ -347,5 +342,29 @@ html {
   }
   100% {
     transform: rotateZ(-5deg);
+  }
+}
+
+
+.snakeDiv {
+  background-image:linear-gradient(#ffb3cc, #ffaa80);
+  height: calc(100vh - 100px);
+  display: flex;
+  .gameBorder {
+    position:relative;
+    background-color:pink;
+    border-style: solid;
+    border-color: rebeccapurple;
+    border-width: 10px;
+    height: 15*34px;
+    width: 15*34px;
+    margin:auto;
+    .snakePlayer{
+      position: absolute;
+      background-color: greenyellow;
+      border-color:grey;
+      border-width:1px;
+
+    }
   }
 }

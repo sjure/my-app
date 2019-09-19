@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 //components
 import Header from './header'
 import Homepage from './Pages/homepage'
+import Snake_page from './Snake/snake_page'
 //includes
 import '../App.scss';
 
@@ -11,7 +12,7 @@ class App extends Component {
         super(props);
         this.changeState = this.changeState.bind(this);
         this.state = {
-            currentPage: Homepage,
+            currentPage: Snake_page,
         }
     }
     changeState(newState) {

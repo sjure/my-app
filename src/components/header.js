@@ -5,6 +5,7 @@ import Homepage from "./Pages/homepage";
 import SjurSide from './Pages/sjurSide'
 import TakkTil from './Pages/takkTil'
 import Partey from './Pages/partey'
+import Snake_page from './Snake/snake_page'
 
 class Header extends Component {
     constructor(props){
@@ -29,10 +30,13 @@ class Header extends Component {
                         <button className={"blankButton"} onClick={()=> this.props.changeState(SjurSide)}>Sjurs side</button>
                     </li>
                     <li>
-                        <button className={"blankButton"} onClick={()=> this.props.changeState(TakkTil)}>Takk til</button>
+                        <button className={"blankButton"} onClick={()=> this.props.changeState(Snake_page)}>Snake</button>
                     </li>
                     <li>
                         <button className={"blankButton"} onClick={()=> this.props.changeState(Partey)}>Party time</button>
+                    </li>
+                    <li>
+                        <button className={"blankButton"} onClick={()=> this.props.changeState(TakkTil)}>Takk til</button>
                     </li>
                 </ul>
             </nav>
